@@ -24,22 +24,14 @@
     <![endif]-->
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>"> <!--this is for referring to special style for specific pages css-->
 
     <%= partial "navbar" %>
     <%= yield %>
+    <%= partial "footer" %>
 
   </body>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="row">
-            <ul id = "social-links" class = "align-center unstyle-list">
-              <li><a href="http://wwww.facebook.com/gdevita" target="blank"><i class="fa fa-facebook fa-2x"></i><br>Facebook</a></li>
-              <li><a href="https://twitter.com/gusdevita_" target="blank"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a></li>
-              <li><a href="https://es.linkedin.com/in/gdevita" target="blank"><i class="fa fa-linkedin fa-2x"></i><br>Linkedin</a></li>
-            </ul>
-        </div>
-    </div>
+
 
 </html>

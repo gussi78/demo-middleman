@@ -1,0 +1,18 @@
+.footer {
+  background-color: #2E2A33;
+  padding: 50px;
+}
+
+#social-links {
+  li {
+    display: inline-block;
+    margin: 15px;
+  }
+  a {
+    color: #666666;
+    &:hover {
+      color: #F5F5F5;
+      text-decoration: none;
+    }
+  }
+}

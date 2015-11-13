@@ -1,0 +1,42 @@
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  margin-top: 20px;
+  padding: 0px;
+  height: 200px;
+  position: relative;
+}
+
+.card-upper-left {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  padding: 0px 8px 0px 8px;
+}
+
+.card-lower-left {
+  position: absolute;
+  padding: 0px 8px 0px 8px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.card-upper-right {
+  position: absolute;
+  margin: 5px;
+  right: 0px;
+  top: 0px;
+}
+
+#bg-one {
+background-image: image-url("hotel.jpg");
+}
+
+#bg-two {
+background-image: image-url("boreal.jpg");
+}
+
+#bg-three {
+background-image: image-url("forest.jpg");
+}

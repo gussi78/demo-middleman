@@ -7,7 +7,7 @@
 // Paddings
 .padded {
   padding-top: 5em;
-  padding-bottom: 5em;
+  // padding-bottom: 5em;
 }
 
 // Backgrounds
@@ -22,4 +22,29 @@
 }
 .bg-facebook {
   background: #3b5998;
+}
+
+// list
+
+.unstyle-list {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+// aligment
+
+.align-center {
+  text-align: center;
+}
+
+// images
+
+.img-gradient {
+  background-image: linear-gradient(-225deg, rgba(0, 101, 1, 0.2) 0%, rgba(60, 80, 80, 0.3) 50%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

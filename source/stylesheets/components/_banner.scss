@@ -1,0 +1,17 @@
+.banner {
+  background-image: image-url("norwaydock.jpg");
+  position: relative;
+  padding: 100px 0; /* use it to define size and be responsive*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+
+}
+
