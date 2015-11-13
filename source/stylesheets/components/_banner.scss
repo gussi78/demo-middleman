@@ -8,9 +8,13 @@
   color: white;
   text-align: center;
   h1 {
-    font-size: 70px;
+    font-size: 50px; /*mobile first*/
     font-weight: 700;
+    @media (min-width: $screen-sm-min) {
+      font-size: 70px;
+    }
   }
+
 
 
 }
