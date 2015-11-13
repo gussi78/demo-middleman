@@ -9526,8 +9526,13 @@ button.close {
   text-align: center; }
   /* line 10, /Users/mac/code/Gussi78/demo-middleman/source/stylesheets/components/_banner.scss */
   .banner h1 {
-    font-size: 70px;
+    font-size: 50px;
+    /*mobile first*/
     font-weight: 700; }
+    @media (min-width: 768px) {
+      /* line 10, /Users/mac/code/Gussi78/demo-middleman/source/stylesheets/components/_banner.scss */
+      .banner h1 {
+        font-size: 70px; } }
 
 /* line 1, /Users/mac/code/Gussi78/demo-middleman/source/stylesheets/components/_card.scss */
 .card {
