@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
 
-  <body class="index">
+  <body class="index"> <!--this is for referring to special style for specific pages css-->
 
     <nav class="navbar-wagon">
   <div class="container navbar-wagon-container">
@@ -54,7 +54,7 @@
     <div class="navbar-wagon-item">
       <div class="dropdown">
 
-        <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <img src="https://avatars.githubusercontent.com/u/15191454?v=3" alt="" class="avatar avatar-small dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" aria-labelledby="navbar-wagon-menu">
           <li><a href="#">Profile</a></li>
@@ -67,25 +67,27 @@
 
   </div>
 </nav>
+
      <!-- Banner -->
-    <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h1>GoNorway</h1>
-            <h4>Powered by nature</h4>
-            <button type="button" class="btn btn-info">TAKE THE TOOR</button>
-          </div>
+  <div class="banner">
+    <div class="img-gradient"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>GoNorway</h1>
+          <h4>Powered by nature</h4>
+          <button type="button" class="btn btn-info">TAKE THE TOUR</button>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- Features -->
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block-feature">
-          <h3>Hotels and accommodation</h3>
+        <div class="block-feature" id="bottom-1">
+          <div class="text-center"><h3><i class="fa fa-bed"></i><br>Hotels</h3></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
           <br>
           <a href="contact.html">Learn more</a>
@@ -94,8 +96,8 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block-feature">
-          <h3>Hotels and accommodation</h3>
+        <div class="block-feature" id="bottom-2">
+          <div class="text-center"><h3><i class="fa fa-camera"></i><br>Sightseeing</h3></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
           <br>
           <a href="contact.html">Learn more</a>
@@ -104,8 +106,8 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block-feature">
-          <h3>Hotels and accommodation</h3>
+        <div class="block-feature" id="bottom-3">
+          <div class="text-center"><h3><i class="fa fa-train"></i><br>Transport</h3></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
           <br>
           <a href="contact.html">Learn more</a>
@@ -114,8 +116,8 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="block-feature">
-          <h3>Hotels and accommodation</h3>
+        <div class="block-feature" id="bottom-4">
+          <div class="text-center"><h3><i class="fa fa-cutlery"></i><br>Eat & Drink</h3></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
           <br>
           <a href="contact.html">Learn more</a>
@@ -133,10 +135,13 @@
     <div class="row">
       <div class="col-xs-12 col-md-4">
         <div class="card" id="bg-one">
+        <div class="img-gradient"></div>
           <div class="card-upper-left">
            <h5>POPULAR</h5>
           </div>
-          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-upper-right">
+            <img class="avatar" src="images/profile_pic.jpg" />
+          </div>
           <div class="card-lower-left">
             <h3>Melià Oslo</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
@@ -144,11 +149,14 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
-        <div class="card" id="bg-one">
+        <div class="card" id="bg-two">
+        <div class="img-gradient"></div>
           <div class="card-upper-left">
            <h5>POPULAR</h5>
           </div>
-          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-upper-right">
+            <img class="avatar" src="images/profile_pic.jpg" />
+          </div>
           <div class="card-lower-left">
             <h3>Melià Oslo</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
@@ -156,11 +164,14 @@
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
-        <div class="card" id="bg-one">
+        <div class="card" id="bg-three">
+        <div class="img-gradient"></div>
           <div class="card-upper-left">
            <h5>POPULAR</h5>
           </div>
-          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-upper-right">
+            <img class="avatar" src="images/profile_pic.jpg" />
+          </div>
           <div class="card-lower-left">
             <h3>Melià Oslo</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
@@ -176,7 +187,7 @@
   <!-- Newsletter -->
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center">
-      <div class="padding">
+      <div class="padded">
       <h2>Get news from us</h2>
       <p>Subscribe now with your email</p>
       <form class="navbar-form navbar-center" role="search">
@@ -191,7 +202,7 @@
 
   <!-- Map -->
 
-<div class="padding">
+<div class="padded">
   <div id="map" style="width: 100%; height: 300px"></div>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
@@ -311,18 +322,34 @@
 
 
 
+    <!-- Footer -->
+<div class="footer">
+  <div class="row">
+    <ul id = "social-links" class = "align-center unstyle-list">
+
+      <li><a target="blank" href="http://wwww.facebook.com/gdevita">
+          <i class="fa fa-facebook fa-2x"></i><br>Facebook
+</a>      </li>
+
+      <li><a target="blank" href="https://twitter.com/gusdevita_">
+          <i class="fa fa-twitter fa-2x"></i><br>Twitter
+</a>      </li>
+
+      <li><a target="blank" href="https://es.linkedin.com/in/gdevita">
+          <i class="fa fa-linkedin fa-2x"></i><br>Linkedin
+</a>      </li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
 
   </body>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="row">
-            <ul id = "social-links" class = "align-center unstyle-list">
-              <li><a href="http://wwww.facebook.com/gdevita" target="blank"><i class="fa fa-facebook fa-2x"></i><br>Facebook</a></li>
-              <li><a href="https://twitter.com/gusdevita_" target="blank"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a></li>
-              <li><a href="https://es.linkedin.com/in/gdevita" target="blank"><i class="fa fa-linkedin fa-2x"></i><br>Linkedin</a></li>
-            </ul>
-        </div>
-    </div>
+
 
 </html>
