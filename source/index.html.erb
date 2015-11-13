@@ -1,10 +1,247 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: My first middleman page
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+ <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>GoNorway</h1>
+            <h4>Powered by nature</h4>
+            <button type="button" class="btn btn-info">TAKE THE TOOR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Features -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block-feature">
+          <h3>Hotels and accommodation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
+          <br>
+          <%=link_to "Learn more", "contact.html" %>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block-feature">
+          <h3>Hotels and accommodation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
+          <br>
+          <%=link_to "Learn more", "contact.html" %>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block-feature">
+          <h3>Hotels and accommodation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
+          <br>
+          <%=link_to "Learn more", "contact.html" %>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="block-feature">
+          <h3>Hotels and accommodation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cupiditate, velit quaerat natus odit magni dolores at quod molestias.
+          <br>
+          <%=link_to "Learn more", "contact.html" %>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Cards -->
+  <div class="container">
+    <h2 class="text-center">Popular places</h2>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="card" id="bg-one">
+          <div class="card-upper-left">
+           <h5>POPULAR</h5>
+          </div>
+          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-lower-left">
+            <h3>Melià Oslo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" id="bg-one">
+          <div class="card-upper-left">
+           <h5>POPULAR</h5>
+          </div>
+          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-lower-left">
+            <h3>Melià Oslo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="card" id="bg-one">
+          <div class="card-upper-left">
+           <h5>POPULAR</h5>
+          </div>
+          <div class="card-upper-right" id="avatar-one"></div>
+          <div class="card-lower-left">
+            <h3>Melià Oslo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolores eius, accusamus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Newsletter -->
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+      <div class="padding">
+      <h2>Get news from us</h2>
+      <p>Subscribe now with your email</p>
+      <form class="navbar-form navbar-center" role="search">
+        <div class="form-group">
+           <input type="text" class="form-control" placeholder="email@domain.com">
+        </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+
+<div class="padding">
+  <div id="map" style="width: 100%; height: 300px"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [
+  {
+      "featureType": "administrative",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          },
+          {
+              "lightness": 33
+          }
+      ]
+  },
+  {
+      "featureType": "landscape",
+      "elementType": "all",
+      "stylers": [
+          {
+              "color": "#f2e5d4"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.park",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "color": "#c5dac6"
+          }
+      ]
+  },
+  {
+      "featureType": "poi.park",
+      "elementType": "labels",
+      "stylers": [
+          {
+              "visibility": "on"
+          },
+          {
+              "lightness": 20
+          }
+      ]
+  },
+  {
+      "featureType": "road",
+      "elementType": "all",
+      "stylers": [
+          {
+              "lightness": 20
+          }
+      ]
+  },
+  {
+      "featureType": "road.highway",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "color": "#c5c6c6"
+          }
+      ]
+  },
+  {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "color": "#e4d7c6"
+          }
+      ]
+  },
+  {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [
+          {
+              "color": "#fbfaf7"
+          }
+      ]
+  },
+  {
+      "featureType": "water",
+      "elementType": "all",
+      "stylers": [
+          {
+              "visibility": "on"
+          },
+          {
+              "color": "#acbcc9"
+          }
+      ]
+  }
+]
+
+// TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+  </script>
+</div>
+
+
